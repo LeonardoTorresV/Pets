@@ -24,7 +24,7 @@ const PetClassifier = () => {
                     const formData = new FormData();
                     formData.append('frame', blob);
 
-                    const response = await fetch('https://fictional-computing-machine-qjxq4q76wj4h6654-5000.app.github.dev/predict_frame', {
+                    const response = await fetch('http://localhost:5000/predict_frame', {
                         method: 'POST',
                         body: formData
                     });
@@ -81,7 +81,7 @@ const PetClassifier = () => {
         alignItems: 'center',
         display: 'flex',
         height: '100vh',
-        margin: '0 610px'
+        margin: '0 500px'
     };
 
     const cardStyle = {
